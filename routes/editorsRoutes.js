@@ -1,6 +1,6 @@
 import express from "express";
 
-import { getAllEditors, signupEditor, loginEditor } from '../controllers/editorControllers';
+import { getAllEditors, signupEditor, loginEditor } from '../controllers/editorControllers.js';
 
 const editorsRouter = express.Router();
 
