@@ -12,7 +12,7 @@ editorsRouter
 
 editorsRouter
   .route("/:id")
-  .get(loginEditor);
+  .post(loginEditor);
 // .put(updateEditor)
 // .delete(deleteEditor);
 
