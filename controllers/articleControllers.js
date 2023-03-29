@@ -93,10 +93,13 @@ const getOneArticle = async (req, res, next) => {
 
 const updateOneArticle = async (req, res, next) => {
   try {
-    const { isInHomePage } = req.body;
+    const { isInHomePage, category  } = req.body;
     const filter = {};
     if (isInHomePage !== undefined) {
       filter.isInHomePage = isInHomePage;
+    }
+    if (category !== undefined) {
+      filter.category = category;
     }
 
     const article = await Article.findByIdAndUpdate(req.params.id, filter, {
