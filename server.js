@@ -9,7 +9,7 @@ import editorsRouter from "./routes/editorsRoutes.js";
 import articlesRouter from "./routes/articlesRoutes.js";
 import errorHandler from "./middleware/errorHandler.js";
 
-dotenv.config({ path: "./config/config.env" });
+dotenv.config();
 
 const app = express();
 app.use(cors());
